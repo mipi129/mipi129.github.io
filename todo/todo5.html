@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>TODO List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="todo-title">To Do Lista</div>
+        <div class="todo-box">
+
+            <div class="todo-input-box">
+                <button class="completeallbtn">✔</button>
+                <input type="text" class="todo-insert" placeholder="Que tareas tienes?">
+            </div>
+            
+            <ul class="todo-list">
+               <li class="todo-item checked">
+                    <div class="checkbox">✔</div>
+                    <div class="todo">Primera Tarea</div>
+                    <button class="removeBtn">x</button>
+                </li>
+                <li class="todo-item">
+                    <div class="checkbox"></div>
+                    <div class="todo">Segunda Tarea</div>
+                    <button class="removeBtn">x</button>
+                </li>
+                <li class="todo-item">
+                    <div class="checkbox"></div>
+                    <div class="todo">Tercera Tarea</div>
+                    <button class="removeBtn">x</button>
+                </li>
+            </ul>
+            <div class="todo-footer">
+                <div class="left-items">3 Tarea Faltan</div>
+                <div class="button-group">
+                    <button class="show-all-btn selected" data-type="all">Todo</button>
+                    <button class="show-active-btn" data-type="active">Activo</button>
+                    <button class="show-completed-btn" data-type="completed">Completo</button>
+                </div>
+                <button class="clear-completed-btn">Borar Completo</button>
+            </div>
+        </div>
+        <p class='info'>최민혁(2016106104) - 웹프로그래밍</p>
+       
+    </div>
+    <script src="todo5.js" ></script>
+</body>
+</html>
